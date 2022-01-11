@@ -23,7 +23,8 @@ Export these requests, and then search with vscode. It is likely to be a post re
 # Calculate the Password
 
 On the login page, the password is processed in a hard-to-read format on the front end when sending to the server. So before sending the request the password should be calculated. Check the form label and javascript function. Finally, I found out that it uses a function called md6.
-`        function mc(a) {
+```javascript
+        function mc(a) {
             ret = "";
             var b = "0123456789ABCDEF";
             if (a == ' '.charCodeAt()) { ret = "+" }
@@ -43,6 +44,7 @@ On the login page, the password is processed in a hard-to-read format on the fro
                 b += mc(c)
             };
             return b
-        }`
+        }
+```
 
 # Send the Request
