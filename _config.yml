@@ -1,5 +1,5 @@
 ---
-title: isole
+title: Isole
 timezone: UTC
 collections:
   posts:
@@ -21,4 +21,3 @@ defaults:
   values:
     layout: page
 permalink: pretty
-theme: jekyll-theme-cayman
